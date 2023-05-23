@@ -28,7 +28,6 @@ class PatientRequest extends FormRequest
             'adresse'=>['required','min:3'],
             'lieu'=>['required','min:3'],
             'telephone'=>['required'],
-            'medecins' => ['nullable'],
             'image'=>['required'],
             'user_id'=>['nullable'],
         ];

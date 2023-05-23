@@ -18,11 +18,13 @@
                         
                     <div class="card-body">
                         <div class="row">
+                            
                             <div class="col-md-4">
                                 <div class="avatar flex-shrink-0 me-3">
                                     <img src="../assets/img/icons/unicons/paypal.png" alt="User" class="rounded" />
                                 </div>
-                                    <h5>medecin info </h5>
+                                    <h5>{{ $rendezvou->medecin->prenom }}</h5>
+                                    <h5>{{ $rendezvou->medecin->nom }}</h5>
                                     <h6>medecin adresse </h6>
                                     <h6>medecin contact </h6>
                             </div>
@@ -52,6 +54,7 @@
                 </div>
             @endforeach
         </div>
+        {{ $rendezvous->links() }}
                 <!--/ Transactions -->
 
     </div>

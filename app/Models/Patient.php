@@ -28,12 +28,15 @@ class Patient extends Authenticatable
     ];
 
 
-    public function medecins():BelongsToMany{
-        return $this->belongsToMany(Medecin::class, 'medecin_patient', 'medecin_id', 'patient_id');
+    public function medecins(){
+        return $this->belongsToMany(Medecin::class,'medecin_patient');
     }
 
     public function creneaux():HasMany{
         return $this->hasMany(Creneau::class);
+    }
+    public function user():BelongsTo{
+        return $this->belongsTo(User::class);
     }
 
     public function imageUrl():string{

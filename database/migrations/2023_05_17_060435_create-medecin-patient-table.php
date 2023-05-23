@@ -14,11 +14,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('medecin_patient', function (Blueprint $table) {
-           $table->unsignedBigInteger('medecin_id')->nullable();
-           $table->unsignedBigInteger('patient_id')->nullable();
-
-           $table->foreign('medecin_id')->references('id')->on('medecins')->onDelete('cascade');
-           $table->foreign('patient_id')->references('id')->on('patients')->onDelete('cascade');
+        $table->primary(['medecin_id', 'patient_id']);
+        $table->foreignIdFor(Medecin::class);
+        $table->foreignIdFor(Patient::class);
         });
     }
 

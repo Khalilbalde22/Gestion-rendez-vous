@@ -7,7 +7,7 @@
 
 <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row mb-5">
-            @foreach ($medecins as $medecin)
+            @foreach ($patients->medecins as $medecin)
             
                 <div class="col-md-6">
                   <div class="card mb-3">
@@ -39,7 +39,7 @@
                 </div>
                 @endforeach
             </div>
-            {{ $medecins->links() }}
+            
 </div>
 
 @endsection

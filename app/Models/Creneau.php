@@ -23,7 +23,7 @@ class Creneau extends Model
     ];
 
     public function medecin():BelongsTo{
-        return $this->belongsTo(Medecin::class);
+        return $this->belongsTo(Medecin::class, 'user_id');
     }
     public function users():BelongsTo{
         return $this->belongsTo(User::class);

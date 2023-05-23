@@ -19,13 +19,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function(){
 
-    $user = User::first();
-    dd($user->roles()->where('reference', 'admin')
-    );
-
-});
 
 Route::get('/login', [AuthController::class, 'index'])
 ->name('login');

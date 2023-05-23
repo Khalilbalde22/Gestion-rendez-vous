@@ -37,7 +37,7 @@
                     <div class="card-body">
 
                     <div class="d-flex align-items-start align-items-sm-center gap-4 form-control">
-                        <img src = "{{ $patients->imageUrl() }}"
+                        <img src = ""
                           alt="user-avatar"
                           class="d-block rounded"
                           height="100"

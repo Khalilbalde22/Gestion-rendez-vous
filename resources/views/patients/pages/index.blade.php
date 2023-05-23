@@ -26,10 +26,11 @@
                                 <div class="avatar flex-shrink-0 me-3">
                                     <img src="../assets/img/icons/unicons/paypal.png" alt="User" class="rounded" />
                                 </div>
-                                    <h5>{{ $rendezvou->user_id }}</h5>
+                                    <h5>{{ $rendezvou->medecin->nom }}</h5>
                                     <h6>medecin info</h6>
                                     <h6> medecin info</h6>
                             </div>
+                            
                             <div class="col-md-8">
                                  <div class="me-2">
                                 <small class="text-muted d-block mb-1">Date</small>
