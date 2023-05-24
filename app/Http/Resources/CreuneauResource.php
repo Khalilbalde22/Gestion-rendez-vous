@@ -20,7 +20,8 @@ class CreuneauResource extends JsonResource
     {
         return [
             'id' => $this->resource->id,
-            'reference' => $this->heur_debut
+            'reference' => $this->heur_debut,
+
         ];
     }
 }
